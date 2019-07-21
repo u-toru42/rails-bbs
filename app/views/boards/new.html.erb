@@ -4,4 +4,4 @@
     <%= link_to '一覧', boards_path, class: 'btn btn-outline-dark' %>
   </div>
 </div>
-<%= render partial: 'form' %>
+<%= render partial: 'form', locals: { board: @board } %>

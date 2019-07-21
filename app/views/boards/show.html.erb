@@ -5,12 +5,14 @@
   </div>
 </div>
 
-<div class="card">
-  <div class="card-header">
-    <h4><%= @board.title %></h4>
-  </div>
-  <div class="card-body">
-    <p class="card-text"><%= simple_format(@board.body) %></p>
-    <p class="text-right font-weight-bold mr-10"><%= @board.name %></p>
-  </div>
+<% if flash[:notice] %>
+  <div class="alert alert-primary"><%= flash[:notice] %></div>
+<% end %>
+
+<%= render @board %>
+
+<div class ="p-comment_list">
+  <div class="p-comment_listTtile">コメント</div>
+  <%= render @board.comments %>
 </div>
+<%= render partial: 'comments/form', locals: { comment: @comment } %>
