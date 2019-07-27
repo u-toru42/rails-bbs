@@ -2,7 +2,7 @@
 #
 # Table name: boards
 #
-#  id         :bigint           not null, primary key
+#  id         :integer          not null, primary key
 #  name       :string(255)
 #  title      :string(255)
 #  body       :text(65535)
@@ -11,7 +11,7 @@
 #
 
 class Board < ApplicationRecord
-  has_many :comments, dependent: :delete_all
+  has_many :comments, dependent: :delete_all 
   has_many :board_tag_relations, dependent: :delete_all
   has_many :tags, through: :board_tag_relations
 

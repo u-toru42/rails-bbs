@@ -2,11 +2,11 @@
 #
 # Table name: board_tag_relations
 #
-#  id         :bigint           not null, primary key
+#  id         :integer          not null, primary key
+#  board_id   :integer
+#  tag_id     :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  board_id   :bigint
-#  tag_id     :bigint
 #
 # Indexes
 #

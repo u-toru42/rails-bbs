@@ -2,12 +2,12 @@
 #
 # Table name: comments
 #
-#  id         :bigint           not null, primary key
-#  comment    :text(65535)      not null
+#  id         :integer          not null, primary key
+#  board_id   :integer
 #  name       :string(255)      not null
+#  comment    :text(65535)      not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  board_id   :bigint
 #
 # Indexes
 #
@@ -24,5 +24,3 @@ class Comment < ApplicationRecord
   validates :name, presence: true, length: { maximum: 10 }
   validates :comment, presence: true, length: { maximum: 1000 }
 end
-
-

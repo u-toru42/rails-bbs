@@ -4,8 +4,8 @@ class CommentsController < ApplicationController
     if comment.save
       flash[:notice] = 'コメントを投稿しました'
       redirect_to comment.board
-    else #redirect_to :back, flash:→Rails5.0~以降では非推奨なので、以下に変換
-      redirect_back fallback_location: {
+    else
+      redirect_to :back, flash: {
         comment: comment,
         error_messages: comment.errors.full_messages
       }
@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
   def destroy
     comment = Comment.find(params[:id])
     comment.delete
-    redirect_to comment.board, flash: { notice: 'コメントが削除されました。' }
+    redirect_to comment.board, flash: { notice: 'コメントが削除されました' }
   end
 
   private
