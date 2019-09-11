@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- 複数のページで共通で使用されるレイアウトビュー -->
 <html>
   <head>
     <title>App</title>
@@ -11,6 +12,7 @@
   <body>
     <%= render 'header' %>
     <div class="container">
+    <!-- すべてのページで共通のページを修正するため　index.html.erbなどは<%= yield %>に展開される-->
       <%= yield %>
     </div>
   </body>
