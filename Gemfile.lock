@@ -52,7 +52,7 @@ GEM
     awesome_print (1.8.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
-    bootstrap (4.0.0)
+    bootstrap (4.3.1)
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.9, < 2)
       sass (>= 3.5.2)
@@ -100,7 +100,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     loofah (2.2.3)
       crass (~> 1.0.2)
-      nokogiri (>= 1.5.9)
+      nokogiri (>= 1.10.4)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (0.3.3)
@@ -114,7 +114,7 @@ GEM
     minitest (5.11.3)
     mysql2 (0.4.10)
     nio4r (2.4.0)
-    nokogiri (1.10.3)
+    nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     popper_js (1.14.5)
     pry (0.12.2)
@@ -146,7 +146,7 @@ GEM
       activesupport (>= 5.0.1.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
-      nokogiri (>= 1.6)
+      nokogiri (>= 1.10.4)
     rails-flog (1.5.0)
       anbt-sql-formatter (>= 0.0.7)
       awesome_print
@@ -230,7 +230,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt (~> 3.1.7)
-  bootstrap (~> 4.0.0)
+  bootstrap (~> 4.3.1)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
