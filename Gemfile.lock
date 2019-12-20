@@ -47,12 +47,12 @@ GEM
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 13.0)
     arel (9.0.0)
-    autoprefixer-rails (9.6.1)
+    autoprefixer-rails (9.7.3)
       execjs
     awesome_print (1.8.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
-    bootstrap (4.3.1)
+    bootstrap (4.0.0)
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.9, < 2)
       sass (>= 3.5.2)
@@ -124,7 +124,7 @@ GEM
       byebug (~> 11.0)
       pry (~> 0.10)
     puma (3.12.1)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -230,7 +230,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt (~> 3.1.7)
-  bootstrap (~> 4.3.1)
+  bootstrap (~> 4.0.0)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
