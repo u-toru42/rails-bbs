@@ -24,3 +24,7 @@ Ruby on Railsで作った掲示板です。
 # References
 [フルスタックエンジニアが教える 即戦力Railsエンジニア養成講座](https://www.udemy.com/rails-kj/)<br>
 [独習Ruby on Rails](https://www.amazon.co.jp/dp/4798160687/ref=cm_sw_r_tw_dp_U_x_KHaGDbR1VTR7B)
+
+localhostが接続できなかったら
+rm tmp/pids/server.pid
+で正常に起動します。
